@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+title: ShellRisk-Bench
+message: If you use ShellRisk-Bench, please cite this repository.
+type: software
+authors:
+  - name: Kontext
+version: 0.1.0
+date-released: 2026-08-18
+repository-code: https://github.com/kontext-security/shellrisk-bench
+url: https://kontext.security
+license: Apache-2.0
+
