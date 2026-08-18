@@ -1,0 +1,23 @@
+{
+  "benchmark": "ShellRisk-Bench",
+  "version": "0.1.0",
+  "split": {
+    "kind": "same-source stratified holdout",
+    "n": 4194,
+    "risky": 193,
+    "not_risky": 4001,
+    "seed": 13
+  },
+  "systems": {
+    "k-cl-1": {"precision": 0.947, "recall": 0.922, "f1": 0.934, "mean_latency_ms": 0.0215},
+    "claude-opus-4-8": {"precision": 0.515, "recall": 0.549, "f1": 0.531, "mean_latency_ms": 1334.4},
+    "claude-sonnet-5": {"precision": 0.547, "recall": 0.456, "f1": 0.497, "mean_latency_ms": 2641.3},
+    "kimi-k3": {"precision": 0.469, "recall": 0.518, "f1": 0.493, "mean_latency_ms": 8654.0},
+    "gpt-5.5": {"precision": 0.393, "recall": 0.456, "f1": 0.422, "mean_latency_ms": 2739.3},
+    "claude-haiku-4-5": {"precision": 0.292, "recall": 0.560, "f1": 0.384, "mean_latency_ms": 935.6},
+    "gpt-5.6-terra": {"precision": 0.286, "recall": 0.430, "f1": 0.344, "mean_latency_ms": 1442.6},
+    "gpt-5.6-luna": {"precision": 0.269, "recall": 0.446, "f1": 0.335, "mean_latency_ms": 1658.1},
+    "mistralai/Shieldstral-1.0-3B": {"precision": 0.406, "recall": 0.269, "f1": 0.324, "mean_latency_ms": 186.0, "threshold": 0.5},
+    "meta-llama/llama-guard-4-12b": {"precision": 0.023, "recall": 0.285, "f1": 0.042, "mean_latency_ms": 1100.0}
+  }
+}

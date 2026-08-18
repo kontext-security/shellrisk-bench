@@ -1,0 +1,30 @@
+{
+  "benchmark": "ShellRisk-Bench",
+  "version": "0.1.0",
+  "seed": 13,
+  "benign_cap": 20000,
+  "raw_command_rows": 161383,
+  "unique_commands": 160220,
+  "cross_label_collisions_dropped": 9,
+  "clean_unique_commands": 160211,
+  "source_command_rows": {
+    "atomicredteam": 265,
+    "gtfobins": 681,
+    "nl2bash": 10624,
+    "payloads": 29,
+    "swesmith": 95825,
+    "terminalbench": 53959
+  },
+  "train": {
+    "n": 16772,
+    "risky": 773,
+    "not_risky": 15999,
+    "sha256": "1f2e0abcaa3e893859df02f94e66922893b7aca961b8b6231afdcc3ef2598208"
+  },
+  "test": {
+    "n": 4194,
+    "risky": 193,
+    "not_risky": 4001,
+    "sha256": "85f61f86f82c6689f534d7df870e7d5499d500a135209d730bd2293dfe6f0c31"
+  }
+}
