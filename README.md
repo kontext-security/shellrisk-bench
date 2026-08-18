@@ -45,7 +45,7 @@ The approximately 20:1 test mix is a constructed operating point for comparing p
 
 | System | Precision | Recall | F1 | Mean latency |
 |---|---:|---:|---:|---:|
-| k-cl-1 | 0.947 | 0.922 | 0.934 | 22 µs |
+| Kestrel | 0.947 | 0.922 | 0.934 | 22 µs |
 | Claude Opus 4.8 | 0.515 | 0.549 | 0.531 | 1.33 s |
 | Claude Sonnet 5 | 0.547 | 0.456 | 0.497 | 2.64 s |
 | Kimi K3 | 0.469 | 0.518 | 0.493 | 8.65 s |
@@ -56,7 +56,7 @@ The approximately 20:1 test mix is a constructed operating point for comparing p
 | Shieldstral 1.0 (3B, local) | 0.406 | 0.269 | 0.324 | 186 ms |
 | Llama Guard 4 (12B) | 0.023 | 0.285 | 0.042 | 1.1 s |
 
-All systems were scored on the same 4,194 commands. Hosted-model latency was measured sequentially and includes the API round trip. Shieldstral used its default 0.5 threshold; Llama Guard counted any unsafe category as risky. Quality results, prompts, and the k-cl-1 per-example verdicts are under [`results/`](results/). The k-cl-1 implementation and weights are not part of this benchmark repository.
+All systems were scored on the same 4,194 commands. Hosted-model latency was measured sequentially and includes the API round trip. Shieldstral used its default 0.5 threshold; Llama Guard counted any unsafe category as risky. Quality results, prompts, and the Kestrel per-example verdicts are under [`results/`](results/). The Kestrel implementation and weights are not part of this benchmark repository.
 
 ## Build
 
@@ -81,7 +81,7 @@ After building the fixed split, score a JSONL prediction file:
 ```bash
 .venv/bin/python -m shellrisk_bench.score \
   --gold data/splits/test.jsonl \
-  --predictions results/k-cl-1.predictions.jsonl
+  --predictions results/kestrel.predictions.jsonl
 ```
 
 Prediction rows contain a stable command hash and a binary verdict:
