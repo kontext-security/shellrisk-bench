@@ -56,7 +56,7 @@ The approximately 20:1 test mix is a constructed operating point for comparing p
 | Shieldstral 1.0 (3B, local) | 0.406 | 0.269 | 0.324 | 186 ms |
 | Llama Guard 4 (12B) | 0.023 | 0.285 | 0.042 | 1.1 s |
 
-All systems were scored on the same 4,194 commands. Hosted-model latency was measured sequentially and includes the API round trip. Shieldstral used its default 0.5 threshold; Llama Guard counted any unsafe category as risky. Quality results, prompts, and the Kestrel per-example verdicts are under [`results/`](results/). The Kestrel implementation and weights are not part of this benchmark repository.
+All systems were scored on the same 4,194 commands. Hosted-model latency was measured sequentially and includes the API round trip. Shieldstral used its default 0.5 threshold; Llama Guard counted any unsafe category as risky. Quality results, prompts, and the Kestrel per-example verdicts are under [`results/`](results/). The Kestrel implementation is not part of this benchmark repository. The portable Kestrel v0.1.0 model artifact is published separately on Hugging Face at the [pinned release revision](https://huggingface.co/kontext-security/Kestrel/tree/b3a600213c0b30ce4d4e2c59fe85978e1b416a96) and is not duplicated here. Its SHA-256 checksum is `1df8b3e5f2bfc4e1fe95230ee9b3d37f63aaa461a8551982fcc0dd7103c8221b`.
 
 ## Build
 
