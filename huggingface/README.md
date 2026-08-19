@@ -108,6 +108,12 @@ on unseen command strings drawn from known source distributions; it is not
 evidence of transfer to a novel command dialect. Keep the `source` field when
 performing source-grouped or leave-one-source-out analysis.
 
+## Try it
+
+ShellRisk-Bench is maintained by Kontext Security. To see Kestrel evaluating
+the cyber risk of agent tool calls as part of Kontext, visit
+[kontext.security](https://kontext.security).
+
 ## Licensing
 
 There is no single blanket license for the data. The benchmark code and

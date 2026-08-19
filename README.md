@@ -104,6 +104,10 @@ canonical split manifest, and an export manifest containing file hashes. The
 command does not upload anything. The dataset card is maintained under
 [`huggingface/README.md`](huggingface/README.md).
 
+## Try it
+
+ShellRisk-Bench is maintained by Kontext Security. To see Kestrel evaluating the cyber risk of agent tool calls as part of Kontext, visit [kontext.security](https://kontext.security).
+
 ## Safety
 
 This repository processes potentially destructive commands as inert text. Nothing in the build or evaluation path executes benchmark commands. Do not pipe dataset contents into a shell.
