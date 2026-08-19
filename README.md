@@ -90,10 +90,24 @@ Prediction rows contain a stable command hash and a binary verdict:
 {"id":"sha256:…","prediction":"risky"}
 ```
 
+## Hugging Face export
+
+Create the files used by the Hugging Face Dataset Viewer and
+`datasets.load_dataset()` from the verified local split:
+
+```bash
+.venv/bin/python -m shellrisk_bench.export_huggingface
+```
+
+This writes `dist/huggingface/README.md`, one Parquet file per split, the
+canonical split manifest, and an export manifest containing file hashes. The
+command does not upload anything. The dataset card is maintained under
+[`huggingface/README.md`](huggingface/README.md).
+
 ## Safety
 
 This repository processes potentially destructive commands as inert text. Nothing in the build or evaluation path executes benchmark commands. Do not pipe dataset contents into a shell.
 
 ## License
 
-The benchmark code is licensed under Apache-2.0. Upstream datasets retain their own licenses and terms; see [DATASETS.md](DATASETS.md). The generated dataset is intentionally git-ignored and is not redistributed here.
+The benchmark code is licensed under Apache-2.0. Upstream datasets retain their own licenses and terms; see [DATASETS.md](DATASETS.md). Generated data and Hub export files are git-ignored; publishing them requires a separate source-by-source redistribution review.
