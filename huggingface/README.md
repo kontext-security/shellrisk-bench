@@ -29,9 +29,8 @@ classification of individual shell-command submissions. It asks whether a
 command poses meaningful cyber or system risk when evaluated without task,
 user, or session context.
 
-**Release status:** The dataset card is public, but the Parquet splits are not
-yet published while source-by-source redistribution terms are reviewed. The
-`load_dataset()` example below becomes available with the data release.
+**Release:** The v0.1 Parquet train and test splits are publicly available
+through Dataset Viewer and `load_dataset()`.
 
 The benchmark contains a deterministic train split of 16,772 rows and test
 split of 4,194 rows. The test set contains 193 `risky` and 4,001 `not_risky`
