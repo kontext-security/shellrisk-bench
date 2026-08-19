@@ -122,6 +122,3 @@ The pinned sources currently declare MIT, Apache-2.0, MIT, MIT, GPL-3.0, and no
 license file, respectively. Consult the source-specific links and notes in
 [DATASETS.md](https://github.com/kontext-security/shellrisk-bench/blob/main/DATASETS.md)
 before using or redistributing the data.
-
-The dataset is provided for security research and defensive evaluation. No
-Kestrel implementation, model weights, or training artifacts are included.
