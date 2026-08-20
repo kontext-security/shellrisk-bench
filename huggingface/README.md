@@ -108,6 +108,12 @@ on unseen command strings drawn from known source distributions; it is not
 evidence of transfer to a novel command dialect. Keep the `source` field when
 performing source-grouped or leave-one-source-out analysis.
 
+## Try it
+
+ShellRisk-Bench is maintained by Kontext Security. To see Kestrel evaluating
+the cyber risk of agent tool calls as part of Kontext, visit
+[kontext.security](https://kontext.security).
+
 ## Licensing
 
 There is no single blanket license for the data. The benchmark code and
@@ -116,6 +122,3 @@ The pinned sources currently declare MIT, Apache-2.0, MIT, MIT, GPL-3.0, and no
 license file, respectively. Consult the source-specific links and notes in
 [DATASETS.md](https://github.com/kontext-security/shellrisk-bench/blob/main/DATASETS.md)
 before using or redistributing the data.
-
-The dataset is provided for security research and defensive evaluation. No
-Kestrel implementation, model weights, or training artifacts are included.
